@@ -23,12 +23,12 @@ public class OrderController {
     }
 
     @GetMapping
-    public OrderEntity getAllOrders() {
+    public List<OrderEntity> getAllOrders() {
         return orderService.getAllOrders();
     }
 
     @GetMapping("/{id}")
-    public Optional<OrderEntity> findOrderById(@PathVariable Long id) {
+    public OrderEntity findOrderById(@PathVariable Long id) {
         return orderService.findOrderById(id);
     }
 

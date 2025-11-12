@@ -62,7 +62,7 @@ public class OrderEntity {
         return description;
     }
 
-    public void setDescricao(String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
